@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(to right, #1877F2, #0F60C4);
+}
+
+/* up top is the main color for the background of the page*/
+
+/* main header section*/
+.header {
+    display: flex;
+    justify-content: center;
+    /* centers content horizontally */
+    align-items: center;
+    /* centers vertically if there's height */
+    padding: 20px;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    /* vertically centers logo & title */
+    gap: 15px;
+}
+
+.logo {
+
+    height: 100px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 3.0rem;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+
+}
+
+/* navigation bar here*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* text under nav bar*/
+
+.info p {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/*notebook and input section*/
+.notebook-title {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+    margin-left: 380px;
+    margin-top: 20px;
+}
+
+.notebook-section {
+    width: 600px;
+    height: 700px;
+    margin: 0;
+    padding: 20px 40px;
+    background-color: #fffbea;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    display: flex;
+
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+
+.notebook-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 500px;
+    margin-top: 20px;
+}
