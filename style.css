@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(to right, #1877F2, #0F60C4);
+    
 }
 
 /* up top is the main color for the background of the page*/
@@ -85,39 +86,104 @@ body {
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     font-size: 28px;
-    margin-left: 380px;
+    margin-left: 550px;
     margin-top: 20px;
 }
 
 .notebook-section {
+   /*notebook styling below*/
     width: 600px;
-    height: 700px;
-    margin: 0;
-    padding: 20px 40px;
-    background-color: #fffbea;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
-    overflow-y: auto;
-    display: flex;
-
+  height: 700px;
+  padding: 40px;
+  background-color: #fffbea;
+  background-image: 
+    linear-gradient(to right, #e91e63 2px, transparent 2px), /* pink vertical margin line */
+    repeating-linear-gradient(to bottom, transparent 0px, transparent 23px, #ccc 24px); /* horizontal lines */
+  background-position: 30px 0; /* left margin space */
+  background-size: 100% 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 24px;
 }
 
 .task-input {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
+    gap: 15px;
+    padding: 25px;
     background-color: #ffffffcc;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    
 }
-
+.button {
+  background-color: #1877F2;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Rubik', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer; /* <- put this here, not just on hover */
+}
+.button:hover{
+    cursor: pointer;
+}
+.task-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
 
 .notebook-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    gap: 500px;
-    margin-top: 20px;
+    gap: 80px;
+    margin-top: 30px;
 }
+.gif-lofi{
+    width: 450px;
+    height: 290px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+
+}
+
+/*site footer*/
+.footer-line{
+    width: 80%;
+  margin: 0 auto 20px;
+  border: none;
+  border-top: 2px solid #ffcc00;
+  box-shadow: 0 2px 10px rgba(255, 204, 0, 0.3);
+}
+.site-footer{
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(to right, #0c4fb3, #0a3a89);
+    color: #e0e0e0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    margin-top: 60px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+   
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* styles for tablets and smaller screens */
+  }
+  
