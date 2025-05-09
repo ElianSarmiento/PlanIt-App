@@ -88,6 +88,10 @@ body {
     font-size: 28px;
     margin-left: 550px;
     margin-top: 20px;
+    background: linear-gradient(to right, #0f4eb5, #1e62d0);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50px;
 }
 
 .notebook-section {
@@ -107,11 +111,22 @@ body {
   font-family: 'Courier New', Courier, monospace;
   line-height: 24px;
 }
-
+.input-title{
+        font-family: 'Rubik', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+    margin-left: 500px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #0f4eb5, #1e62d0);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50px;
+}
 .task-input {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
     padding: 25px;
     background-color: #ffffffcc;
     border-radius: 10px;
@@ -119,12 +134,24 @@ body {
     width: 500px;
     height: 400px;
     justify-content: center;
+    }
+.task-input input {
+   padding: 12px;
+    width: 94%;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+    text-align: center;
     
 }
+
+
 .button {
   background-color: #1877F2;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 24px 15px;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
