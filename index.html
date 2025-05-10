@@ -10,24 +10,20 @@
 <body>
 <div class = "header">
     <div class = "main-title">
-        <img src="/PlanIt-App/assets/logos/planitlogo2.png" alt="Main-Logo" class="logo">
+        <img src="assets/logos/planitlogo2.png" alt="Main-Logo" class="logo">
         <h1 class = "title">PlanIt</h1>
     </div>
-   
+
 </div>
 <nav class = "navbar">
     <ul>
-        <li><a href="">Info</a></li>
+        <li><a href="#info" id="info-button">Info</a></li>
         <li><a href="">Sorting Filter</a></li>
-        <li> <a href="">About</a></li>
         <li><a href="">Search</a></li>
         <li><a href="">Theme</a></li>
     </ul>
 </nav>
-<div class="info">
-    <p>PlanIt is your digital notebook for organizing daily tasks. Categorize, prioritize, and get things done with ease — all in one clean, focused space. <br>
-        Whether you're planning your week or jotting down last-minute errands, PlanIt keeps everything in one place so you can stay on track.</p>
-</div>
+<div id="info" class="info"></div>
 <h2 class="notebook-title">Notebook</h2>
 <h2 class="input-title">Input Tasks Here</h2>
 
@@ -39,9 +35,9 @@
 <div class="task-area">
 <div class="task-input">
     <input type="text" id="taskInput" placeholder="Enter your task here">
-  <button class="button" onclick="addTask()">Submit</button>
- <button class="button" onclick="addCategory()">Add Category</button>
-  <button class="button"  onclick="addPriority()">Add Priority</button>
+    <button class="button" onclick="addTask()">Submit</button>
+    <button class="button" onclick="addCategory()">Add Category</button>
+    <button class="button"  onclick="addPriority()">Add Priority</button>
 </div>
 
 <img src="assets/media/lofi.gif" alt="studying" class="gif-lofi">
