@@ -34,10 +34,27 @@
 </section>
 <div class="task-area">
 <div class="task-input">
-    <input type="text" id="taskInput" placeholder="Enter your task here">
+    <input type="text" id="taskInput" name="task-box" placeholder="Enter your task here">
     <button class="button" onclick="addTask()">Submit</button>
-    <button class="button" onclick="addCategory()">Add Category</button>
-    <button class="button"  onclick="addPriority()">Add Priority</button>
+    <label class="category" onclick="addCategory()">Add Category</label>
+    
+    <select class="button" name="category" id="category">
+        <option value="education">Education</option>
+        <option value="shopping">Shopping</option>
+        <option value="grocery">Grocery</option>
+        <option value="health">Health</option>
+        <option value="bills">Bills</option>
+    </select>
+    
+    
+    <label onclick="addPriority()">Add Priority</label>
+
+    <select class="button" name="priority" id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+
 </div>
 
 <img src="assets/media/lofi.gif" alt="studying" class="gif-lofi">
