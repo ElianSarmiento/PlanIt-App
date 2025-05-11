@@ -9,12 +9,24 @@ addEventListener('DOMContentLoaded', () => {
     const infoText = document.createElement('p')
     infoText.classList.add('info-text');
     infoText.innerHTML = "PlanIt is your digital notebook for organizing daily tasks. Categorize, prioritize, and get things done with ease — all in one clean, focused space. <br> Whether you're planning your week or jotting down last-minute errands, PlanIt keeps everything in one place so you can stay on track.";
-    info.appendChild(infoText);
 
-    infoButton.addEventListener('click', () => {
+    function showInfo() {
+        if (!document.querySelector('.info-text')) {
+            info.appendChild(infoText);
+
+        } else {
+            info.removeChild(infoText);
+        }
+    };
+
+    let infoShown = false;
+
+
+    infoButton.addEventListener('click', (event) => {
         event.preventDefault();
-        // add logic for the button click event
-    })
+
+        showInfo();
+    });
 
 });
 
