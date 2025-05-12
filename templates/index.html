@@ -10,7 +10,7 @@
 <body>
 <div class = "header">
     <div class = "main-title">
-        <img src="assets/logos/planitlogo2.png" alt="Main-Logo" class="logo">
+        <img src="{{ url_for('static', filename='assets/logos/planitlogo2.png') }}" alt="Main-Logo" class="logo">
         <h1 class = "title">PlanIt</h1>
     </div>
 
@@ -29,7 +29,7 @@
 
 <div class="notebook-wrapper">
 <section class="notebook-section">
-    
+
 <div class="notebook" id="taskList"></div>
 </section>
 <div class="task-area">
@@ -37,7 +37,7 @@
     <input type="text" id="taskInput" name="task-box" placeholder="Enter your task here">
     <button class="button" onclick="addTask()">Submit</button>
     <label class="category" onclick="addCategory()">Add Category</label>
-    
+
     <select class="button" name="category" id="category">
         <option value="education">Education</option>
         <option value="shopping">Shopping</option>
@@ -45,8 +45,8 @@
         <option value="health">Health</option>
         <option value="bills">Bills</option>
     </select>
-    
-    
+
+
     <label onclick="addPriority()">Add Priority</label>
 
     <select class="button" name="priority" id="priority">
@@ -57,7 +57,7 @@
 
 </div>
 
-<img src="assets/media/lofi.gif" alt="studying" class="gif-lofi">
+<img src="{{ url_for('static', filename='assets/media/lofi.gif') }}" alt="studying" class="gif-lofi">
 </div>
 </div>
 
