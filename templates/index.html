@@ -38,7 +38,7 @@
     <h2 class="input-title">Input Tasks Here</h2>
         <div class="task-input">
     <input type="text" id="taskInput" name="task-box" placeholder="Enter your task here">
-    <button class="button" onclick="addTask()">Submit</button>
+    <button class="button"  id="submitButton">Submit</button>
     <label class="category" onclick="addCategory()">Add Category</label>
 
     <select class="button" name="category" id="category">
@@ -50,7 +50,7 @@
     </select>
 
 
-    <label onclick="addPriority()">Add Priority</label>
+    <label  class="priority"  onclick="addPriority()">Add Priority</label>
 
     <select class="button" name="priority" id="priority">
         <option value="low">Low</option>
