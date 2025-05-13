@@ -80,17 +80,25 @@ body {
     margin: 50px auto;
 }
 
+.notebook-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /*notebook and input section*/
-.notebook-title {
+.notebook-title, .input-title {
     font-family: 'Rubik', sans-serif;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     font-size: 28px;
-    margin-left: 550px;
+    /* margin-left: 200px; */
+    /* margin-inline: 250px; */
     margin-top: 20px;
     background: linear-gradient(to right, #0f4eb5, #1e62d0);
     display: inline-block;
-    padding: 10px;
+    padding: 10px 10px;
     border-radius: 50px;
 }
 
@@ -111,18 +119,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
   line-height: 24px;
 }
-.input-title{
-        font-family: 'Rubik', sans-serif;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    font-size: 28px;
-    margin-left: 500px;
-    margin-top: 20px;
-    background: linear-gradient(to right, #0f4eb5, #1e62d0);
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50px;
-}
+
 .task-input {
     display: flex;
     flex-direction: column;
@@ -210,7 +207,13 @@ body {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     /* styles for tablets and smaller screens */
+    .notebook-area{
+        width: 300px;
+    }
+    .task-input{
+        width: 300px;
+    }
   }
   

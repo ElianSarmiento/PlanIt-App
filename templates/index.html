@@ -24,16 +24,19 @@
     </ul>
 </nav>
 <div id="info" class="info"></div>
-<h2 class="notebook-title">Notebook</h2>
-<h2 class="input-title">Input Tasks Here</h2>
+
+
 
 <div class="notebook-wrapper">
-<section class="notebook-section">
-
-<div class="notebook" id="taskList"></div>
-</section>
-<div class="task-area">
-<div class="task-input">
+    <section class="notebook-area">
+    <h2 class="notebook-title">Notebook</h2>
+    <div class="notebook-section">
+        <div class="notebook" id="taskList"></div>
+    </div>
+    </section>
+    <div class="task-area">
+    <h2 class="input-title">Input Tasks Here</h2>
+        <div class="task-input">
     <input type="text" id="taskInput" name="task-box" placeholder="Enter your task here">
     <button class="button" onclick="addTask()">Submit</button>
     <label class="category" onclick="addCategory()">Add Category</label>
