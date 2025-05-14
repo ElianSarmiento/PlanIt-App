@@ -1,10 +1,11 @@
 addEventListener('DOMContentLoaded', () => {
 
     // upon load, info text should not show up
-
+    
+    const taskList = document.getElementById('taskList');
     const info = document.getElementById('info');
-    const infoButton = document.getElementById('info-button')
-
+    const infoButton = document.getElementById('info-button');
+    const submitButton = document.getElementById('submitButton');
     // for the info link, when a user clicks on it, it will reveal the text contents.
     const infoText = document.createElement('p')
     infoText.classList.add('info-text');
@@ -28,5 +29,38 @@ addEventListener('DOMContentLoaded', () => {
         showInfo();
     });
 
+    submitButton.addEventListener('click', (event) =>{
+        event.preventDefault(); // stops page from refreshing page
+
+      
+        const categoryValue = document.getElementById('category').value;
+        const priorityValue = document.getElementById('priority').value;
+        const taskItem = document.createElement('div');
+        const taskInput = document.getElementById('taskInput');
+        const taskValue = taskInput.value.trim();
+        const capitalizedTask = taskValue 
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+        console.log(capitalizedTask);
+
+        
+        if (taskValue !== ''){
+        taskItem.classList.add('task-item');
+        taskList.appendChild(taskItem);
+            console.log('Task Submitted', taskValue);
+        
+        taskItem.innerHTML = `
+        <strong>${capitalizedTask}</strong><br>
+        Category: ${categoryValue.toUpperCase()}<br>
+        Priority: ${priorityValue.toUpperCase()}
+        `;
+        } else {
+            console.log('Please enter a task.');
+        }
+        
+
+    });
+    
 });
 
