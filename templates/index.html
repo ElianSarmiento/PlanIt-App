@@ -31,16 +31,26 @@
     <section class="notebook-area">
     <h2 class="notebook-title">Notebook</h2>
     <div class="notebook-section">
-        <div class="notebook" id="taskList"></div>
+        <div class="notebook" id="taskList">
+<!-- add the input tasks in the notebook paper here without JS -->
+        {%for task in tasks%}
+            <div class="task-item">
+            <strong> {{task.task|title}}</strong><br>
+            Category: {{task.category|upper}}<br>
+            Priority: {{task.priority|upper}}
+            </div>
+        {% endfor %}
+        </div>
     </div>
     </section>
     <div class="task-area">
     <h2 class="input-title">Input Tasks Here</h2>
         <div class="task-input">
+        <form action="/" method="POST">
     <input type="text" id="taskInput" name="task-box" placeholder="Enter your task here">
     <button class="button"  id="submitButton">Submit</button>
-    <label class="category" onclick="addCategory()">Add Category</label>
 
+    <label class="category" onclick="addCategory()">Add Category</label>
     <select class="button" name="category" id="category">
         <option value="education">Education</option>
         <option value="shopping">Shopping</option>
@@ -51,17 +61,16 @@
 
 
     <label  class="priority"  onclick="addPriority()">Add Priority</label>
-
     <select class="button" name="priority" id="priority">
         <option value="low">Low</option>
         <option value="medium">Medium</option>
         <option value="high">High</option>
     </select>
-
-</div>
+        </form>
+        </div>
 
 <img src="{{ url_for('static', filename='assets/media/lofi.gif') }}" alt="studying" class="gif-lofi">
-</div>
+    </div>
 </div>
 
 

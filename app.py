@@ -23,10 +23,10 @@ class Data(db.Model):
     category = db.Column(db.String(128))
     priority = db.Column(db.String(128))
 
-    def __init__(self, ptask, pcategory, ppriority):
-        self.task = ptask
-        self.category = pcategory
-        self.priority = ppriority
+    def __init__(self, pTask, pCategory, pPriority):
+        self.task = pTask
+        self.category = pCategory
+        self.priority = pPriority
 
 
 with app.app_context():
@@ -48,16 +48,15 @@ def submit():
         task_category = request.form["category"]
         task_priority = request.form["priority"]
 
+        # testing out
+        print(f"Received: {task_info}, {task_category}, {task_priority}")
+
         new_task = Data(task_info, task_category, task_priority)
         db.session.add(new_task)
         db.session.commit()
 
-    # return render_template(
-    #     "index.html",
-    #     task_info=task_info,
-    #     task_category=task_category,
-    #     task_priority=task_priority,
-    # )
+    # Since we're using one html file, we want to refresh the page once the user triggers the POST request
+    # render_template would likely double the submissions
     return redirect(url_for("index"))
 
 
