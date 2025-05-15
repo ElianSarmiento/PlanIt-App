@@ -1,116 +1,118 @@
 body {
-    background: linear-gradient(to right, #1877F2, #0F60C4);
-    
+  background: linear-gradient(to right, #1877f2, #0f60c4);
 }
 
 /* up top is the main color for the background of the page*/
 
 /* main header section*/
 .header {
-    display: flex;
-    justify-content: center;
-    /* centers content horizontally */
-    align-items: center;
-    /* centers vertically if there's height */
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  /* centers content horizontally */
+  align-items: center;
+  /* centers vertically if there's height */
+  padding: 20px;
 }
 
 .main-title {
-    display: flex;
-    align-items: center;
-    /* vertically centers logo & title */
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  /* vertically centers logo & title */
+  gap: 15px;
 }
 
 .logo {
-
-    height: 100px;
-    border-radius: 50%;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .title {
-    font-size: 3.0rem;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-
+  font-size: 3rem;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* navigation bar here*/
 .navbar {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    padding: 10px 0;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 10px 0;
+  text-align: center;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-
+  color: white;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
+  color: #ffcc00;
+  text-decoration: underline;
 }
 
 .navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 100px;
-    padding: 0;
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  display: flex;
+  list-style: none;
+  gap: 100px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* text under nav bar*/
 
 .info p {
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: center;
-    max-width: 900px;
-    margin: 50px auto;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
 }
 
 .notebook-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*notebook and input section*/
-.notebook-title, .input-title {
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    font-size: 28px;
-    /* margin-left: 200px; */
-    /* margin-inline: 250px; */
-    margin-top: 20px;
-    background: linear-gradient(to right, #0f4eb5, #1e62d0);
-    display: inline-block;
-    padding: 10px 10px;
-    border-radius: 50px;
+.notebook-title,
+.input-title {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-size: 28px;
+  /* margin-left: 200px; */
+  /* margin-inline: 250px; */
+  margin-top: 20px;
+  background: linear-gradient(to right, #0f4eb5, #1e62d0);
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 50px;
 }
 
 .notebook-section {
-   /*notebook styling below*/
-    width: 600px;
+  /*notebook styling below*/
+  width: 600px;
   height: 700px;
   padding: 40px;
   background-color: #fffbea;
-  background-image: 
-    linear-gradient(to right, #e91e63 2px, transparent 2px), /* pink vertical margin line */
-    repeating-linear-gradient(to bottom, transparent 0px, transparent 23px, #ccc 24px); /* horizontal lines */
+  background-image: linear-gradient(to right, #e91e63 2px, transparent 2px),
+    /* pink vertical margin line */
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 23px,
+        #ccc 24px
+      ); /* horizontal lines */
   background-position: 30px 0; /* left margin space */
   background-size: 100% 24px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
@@ -120,42 +122,40 @@ body {
   line-height: 24px;
 }
 
-.task-input {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 25px;
-    background-color: #ffffffcc;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    width: 500px;
-    height: 400px;
-    justify-content: center;
-    }
+.task-input form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px;
+  background-color: #ffffffcc;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 400px;
+  justify-content: center;
+}
 .task-input input {
-   padding: 12px;
-    width: 94%;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    outline: none;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-
-    
+  padding: 12px;
+  width: 94%;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  outline: none;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.task-item{
-    margin-bottom: 20px;
-    background-color: #ffcc00;
-    box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.2);
-    padding: 10px;
-    border-radius: 5px;
+.task-item {
+  margin-bottom: 20px;
+  background-color: #ffcc00;
+  box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.2);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .button {
-  background-color: #1877F2;
+  background-color: #1877f2;
   color: white;
   padding: 12px 24px 15px;
   font-size: 1rem;
@@ -165,71 +165,65 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
   cursor: pointer; /* <- put this here, not just on hover */
 }
-.button:hover{
-    cursor: pointer;
+.button:hover {
+  cursor: pointer;
 }
 .task-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
 .notebook-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
 }
-.gif-lofi{
-    width: 450px;
-    height: 290px;
-    border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
-
+.gif-lofi {
+  width: 450px;
+  height: 290px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 /*site footer*/
-.footer-line{
-    width: 80%;
+.footer-line {
+  width: 80%;
   margin: 0 auto 20px;
   border: none;
   border-top: 2px solid #ffcc00;
   box-shadow: 0 2px 10px rgba(255, 204, 0, 0.3);
 }
-.site-footer{
-    text-align: center;
-    padding: 30px 0;
-    background: linear-gradient(to right, #0c4fb3, #0a3a89);
-    color: #e0e0e0;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
-    margin-top: 60px;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-   
+.site-footer {
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(to right, #0c4fb3, #0a3a89);
+  color: #e0e0e0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  margin-top: 60px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-.category, .priority{
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    text-shadow: 4px 2px 6px rgba(0, 0, 0, 0.9);
-    
+.category,
+.priority {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  text-shadow: 4px 2px 6px rgba(0, 0, 0, 0.9);
 }
-
-
 
 @media screen and (max-width: 1000px) {
-    /* styles for tablets and smaller screens */
-    .notebook-area{
-        width: 300px;
-    }
-    .task-input{
-        width: 300px;
-    }
+  /* styles for tablets and smaller screens */
+  .notebook-area {
+    width: 300px;
   }
-  
+  .task-input {
+    width: 300px;
+  }
+}
