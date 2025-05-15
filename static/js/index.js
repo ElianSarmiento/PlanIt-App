@@ -37,6 +37,7 @@ addEventListener('DOMContentLoaded', () => {
         const priorityValue = document.getElementById('priority').value;
         const taskItem = document.createElement('div');
         const taskInput = document.getElementById('taskInput');
+        const deleteButton = document.createElement('button');
         const taskValue = taskInput.value.trim();
         const capitalizedTask = taskValue 
         .split(' ')
@@ -47,9 +48,11 @@ addEventListener('DOMContentLoaded', () => {
         
         if (taskValue !== ''){
         taskItem.classList.add('task-item');
+        deleteButton.textContent = 'Delete';
         taskList.appendChild(taskItem);
             console.log('Task Submitted', taskValue);
-        
+
+        const taskText = document.createElement('span');
         taskItem.innerHTML = `
         <strong>${capitalizedTask}</strong><br>
         Category: ${categoryValue.toUpperCase()}<br>
