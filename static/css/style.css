@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(to right, #1877f2, #0f60c4);
+  color: white;
 }
 
 /* up top is the main color for the background of the page*/
@@ -41,6 +42,7 @@ body {
   padding: 10px 0;
   text-align: center;
 }
+
 
 .navbar a {
   color: white;

@@ -6,6 +6,7 @@
     <title>PlanIt</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link id="theme-stylesheet" rel="stylesheet" href="{{ url_for('static', filename='css/light.css') }}">
 </head>
 <body>
 <div class = "header">
@@ -20,7 +21,7 @@
         <li><a href="#info" id="info-button">Info</a></li>
         <li><a href="">Sorting Filter</a></li>
         <li><a href="">Search</a></li>
-        <li><a href="">Theme</a></li>
+      <li><a href="#" id="theme-toggle">Theme</a></li>
     </ul>
 </nav>
 <div id="info" class="info"></div>
@@ -32,7 +33,6 @@
     <h2 class="notebook-title">Notebook</h2>
     <div class="notebook-section">
         <div class="notebook" id="taskList">
-<!-- add the input tasks in the notebook paper here without JS -->
         {%for task in tasks%}
             <div class="task-item">
             <strong> {{task.task|title}}</strong><br>

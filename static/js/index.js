@@ -1,7 +1,8 @@
 addEventListener('DOMContentLoaded', () => {
 
     // upon load, info text should not show up
-
+    const themeStylesheet = document.getElementById('theme-stylesheet');
+    const themeButton = document.getElementById('theme-toggle');
     const taskList = document.getElementById('taskList');
     const info = document.getElementById('info');
     const infoButton = document.getElementById('info-button');
@@ -28,6 +29,15 @@ addEventListener('DOMContentLoaded', () => {
 
         showInfo();
     });
+    
+    themeButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (themeStylesheet.getAttribute('href').includes('light.css')) {
+        themeStylesheet.setAttribute('href', '/static/css/dark.css');
+    } else {
+        themeStylesheet.setAttribute('href', '/static/css/light.css');
+    }
+});
 
     // submitButton.addEventListener('click', (event) =>{
     //     event.preventDefault(); // stops page from refreshing page
