@@ -27,11 +27,11 @@
 ### Developers:
 
 🔸 Sabrina Ira ➡️
-![[GitHub](https://github.com/sabrinaira)](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white)
-![[LinkedIn](https://www.linkedin.com/in/sabrinaira/)](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white) <br>
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white)](https://github.com/sabrinaira)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sabrinaira/) <br>
 🔸 Elian Sarmiento ➡️
-![[GitHub](https://github.com/ElianSarmiento)](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white)
-![[LinkedIn](https://www.linkedin.com/in/elian-sarmiento2440/)](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white)](https://github.com/ElianSarmiento)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elian-sarmiento2440/)
 
 ❔ Click [here](SETUP.md) for setup documentation!
 
