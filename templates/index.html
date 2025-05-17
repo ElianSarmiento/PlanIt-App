@@ -38,6 +38,9 @@
             <strong> {{task.task|title}}</strong><br>
             Category: {{task.category|upper}}<br>
             Priority: {{task.priority|upper}}
+            <form action="/delete/{{ task.id }}" method="POST">
+                <button type="submit" name="delete" id="delete-button">X</button>
+            </form>
             </div>
         {% endfor %}
         </div>
