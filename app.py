@@ -15,7 +15,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = (
 )
 db = SQLAlchemy(app)
 
-
+# ^ Database model
 class Data(db.Model):
     __tablename__ = "usertasks"
     id = db.Column(db.Integer, primary_key=True)
@@ -33,7 +33,7 @@ with app.app_context():
     db.create_all()
 
 
-# * GET request
+# & GET request
 @app.route("/")
 def index():
     tasks = Data.query.all()
@@ -59,6 +59,17 @@ def submit():
     # render_template would likely double the submissions
     return redirect(url_for("index"))
 
+# ! DELETE request
+@app.route("/delete/<int:id>", methods=["POST"])
+def delete(id):
+    task = Data.query.get(id) # retrieve the task through its id
+
+    print(f"Request to delete task ID {id}: {task}")
+
+    db.session.delete(task)
+    db.session.commit()
+
+    return redirect(url_for("index")) # refresh the page
 
 if __name__ == "__main__":
     app.run(debug=True)
