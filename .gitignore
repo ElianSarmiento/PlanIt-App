@@ -1,3 +1,14 @@
+.vscode/
+
+# python
+virtual/
+venv/
+__pycache__/
+*.pyc
+
+.env
+env/
+
 # Windows
 Thumbs.db
 desktop.ini

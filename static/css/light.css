@@ -1,0 +1,8 @@
+body {
+  background: linear-gradient(to right, #1877f2, #0f60c4);
+  color: rgb(67, 87, 34);
+}
+
+.navbar {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
